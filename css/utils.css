@@ -1,0 +1,4 @@
+.theme-color-bg{background-color: var(--theme-color);}
+.theme-color-txt{color: var(--theme-color);}
+.theme-pink-bg{background-color: var(--theme-color-pink);}
+.theme-pink-txt{color: var(--theme-color-pink);}

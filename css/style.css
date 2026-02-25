@@ -1,0 +1,39 @@
+@import url(bootstrap.min.css);
+@import url(style.css);
+@import url(variables.css);
+@import url(utils.css);
+@import url(https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css);
+
+.main-head{
+    max-height: 90px
+}
+/* Remove default dropdown caret */
+.dropdown-toggle::after {
+    display: none !important;
+}
+
+/* Animate dropdown on hover */
+.dropdown .dropdown-menu {
+    display: block;
+    opacity: 0;
+    visibility: hidden;
+    transform: translateY(20px);
+    transition: all 0.3s ease;
+}
+
+.dropdown:hover .dropdown-menu {
+    opacity: 1;
+    visibility: visible;
+    transform: translateY(0);
+}
+/* For smooth accordion toggle inside offcanvas */
+.offcanvas .collapse {
+    transition: all 0.3s ease;
+}
+
+/* Prevent dropdown hover effects on small screens */
+@media (max-width: 991.98px) {
+  .dropdown:hover .dropdown-menu {
+    display: none;
+  }
+}
